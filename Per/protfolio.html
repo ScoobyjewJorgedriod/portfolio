@@ -1,168 +1,203 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio</title>
+
   <style>
     * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-body {
-  background: #f2f2f2;
-  color: #333;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.home {
-  text-align: center;
-  padding: 60px 20px;
-  background: #e9e9e9;
-}
+    body {
+      background: #f2f2f2;
+      color: #333;
+    }
 
-.profile-container {
-  margin-bottom: 25px;
-}
+    .home {
+      text-align: center;
+      padding: 60px 20px;
+      background: #e9e9e9;
+    }
 
-.profile-img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 6px solid #dcdcdc;
-}
+    .profile-container {
+      margin-bottom: 25px;
+    }
 
-.content h1 {
-  font-size: 48px;
-  font-weight: 300;
-  letter-spacing: 3px;
-}
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #dcdcdc;
+    }
 
-.content h1 span {
-  font-weight: bold;
-}
+    .content h1 {
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
 
-.intro {
-  width: 60%;
-  margin: 20px auto;
-  line-height: 1.7;
-  color: #555;
-}
+    .intro {
+      width: 60%;
+      margin: 20px auto;
+      line-height: 1.7;
+      color: #555;
+    }
 
-.social-links {
-  margin: 25px 0;
-}
+    .social-links {
+      margin: 25px 0;
+    }
 
-.social-links a {
-  text-decoration: none;
-  margin: 0 10px;
-  color: #000;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    .social-links a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #000;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-.social-links a:hover {
-  color: #555;
-}
+    .social-links a:hover {
+      color: #555;
+    }
 
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  text-decoration: none;
-  color: #000;
-  border-bottom: 2px solid #000;
-  padding-bottom: 5px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
 
-.about {
-  padding: 60px 20px;
-  background: white;
-}
+    .about {
+      padding: 60px 20px;
+      background: white;
+    }
 
-.about h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 36px;
-}
+    .about h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
 
-.about-box {
-  width: 70%;
-  margin: auto;
-  background: #f8f8f8;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    .about-box {
+      width: 70%;
+      margin: auto;
+      background: #f8f8f8;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.about-box h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #111;
-}
+    .about-box h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #111;
+    }
 
-.about-box p,
-.about-box ul {
-  line-height: 1.8;
-  color: #444;
-}
+    .about-box p,
+    .about-box ul {
+      line-height: 1.8;
+      color: #444;
+    }
 
-.about-box ul {
-  padding-left: 20px;
-}
+    .about-box ul {
+      padding-left: 20px;
+    }
 
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .intro,
+      .about-box {
+        width: 90%;
+      }
+
+      .content h1 {
+        font-size: 36px;
+      }
+
+      .profile-img {
+        width: 180px;
+        height: 180px;
+      }
+    }
   </style>
-  <body>
-    <section class="home">
-      <div class="profile-container">
-        <img src="giga.jpg" alt="Student Profile" class="profile-img" />
+</head>
+
+<body>
+
+  <section class="home">
+    <div class="profile-container">
+      <img src="giga.jpg" alt="Student Profile" class="profile-img" />
+    </div>
+
+    <div class="content">
+      <h1>Bern John D. Per</h1>
+
+      <p class="intro">
+        Hello! I am a passionate student who loves learning new technologies,
+        improving my skills, and creating meaningful projects.
+      </p>
+
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://github.com/ScoobyjewJorgedriod/portfolio" target="_blank">GitHub</a>
       </div>
 
-      <div class="content">
-        <h1>Bern John D.Per</h1>
+      <a href="#about" class="btn">Click Me</a>
+    </div>
+  </section>
 
-        <p class="intro">
-          Hello! I am a passionate student who loves learning new technologies,
-          improving my skills, and creating meaningful projects.
-        </p>
+  <section id="about" class="about">
+    <h2>My Portfolio</h2>
 
-        <div class="social-links">
-          <a href="https://facebook.com">Facebook</a>
-          <a href="https://instagram.com">Instagram</a>
-          <a href=https://github.com/ScoobyjewJorgedriod/portfolio>GitHub</a>
-        </div>
+    <div class="about-box">
+      <h3>Academic / Personal Background</h3>
+      <p>
+        I am currently studying Information Technology at STI College Fairview
+        and enjoy web development and UI/UX design.
+      </p>
 
-        <a href="#about" class="btn">Click Me</a>
-      </div>
-    </section>
+      <h3>Relevant Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Communication Skills</li>
+        <li>Problem Solving</li>
+        <li>Team Collaboration</li>
+      </ul>
 
-    <section id="about" class="about">
-      <h2>My Portfolio</h2>
+      <h3>Career Objectives</h3>
+      <p>
+        My goal is to become a professional software developer and build
+        innovative applications that help people.
+      </p>
 
-      <div class="about-box">
-        <h3>Academic / Personal Background</h3>
-        <p>I am currently studying Information Technology at STI College Fairview and enjoy web development and UI/UX design. </p>
+      <footer>
+        <p>© 2026 Bern John D. Per | Portfolio Website</p>
+      </footer>
+    </div>
+  </section>
 
-        <h3>Relevant Skills</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Responsive Web Design</li>
-          <li>Communication Skills</li>
-          <li> Bugo sa Problem Solving</li>
-          <li>Usahay Bugo</li>
-        </ul>
-
-        <h3>Career Objectives</h3>
-        <p>
-          My goal is to become a professional software developer and build
-          innovative applications that help people.
-        </p>
-      </div>
-    </section>
-  </body>
+</body>
 </html>
